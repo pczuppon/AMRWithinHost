@@ -1,0 +1,3 @@
+inter mut = 1/(10*K)
+high mut = 1/K
+low mut = 1/(50*K)

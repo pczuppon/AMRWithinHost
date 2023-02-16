@@ -1,0 +1,9 @@
+parameter sets:
+low: c=0.01
+inter: c=0.1
+high: c=0.2
+
+always: 
+biostatic!
+final treatment = 7 days
+MIC factor = 10

@@ -1,0 +1,51 @@
+\documentclass{standalone}
+\usepackage{amsmath}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tikz} 
+\usetikzlibrary{arrows, decorations.markings,decorations.pathreplacing,angles,quotes}
+\usepackage{microtype}
+\usepackage{fourier}
+
+\definecolor{py_blue}{rgb}{0.12156862745098039, 0.4666666666666667, 0.7058823529411765}
+\definecolor{py_orange}{rgb}{1.0, 0.4980392156862745, 0.054901960784313725}
+\definecolor{py_green}{rgb}{0.17254901960784313, 0.6274509803921569, 0.17254901960784313}
+\definecolor{py_red}{rgb}{0.8392156862745098, 0.15294117647058825, 0.1568627450980392}
+\definecolor{py_purple}{rgb}{0.5803921568627451, 0.403921568627451, 0.7411764705882353}
+
+\begin{document}
+
+\begin{tikzpicture}
+	\node[anchor=south west,inner sep=0] (Bild) at (0,0) {\includegraphics[scale=0.39]{birth_low_blank}};
+   		\begin{scope}[x=(Bild.south east),y=(Bild.north west)]
+   			\node (Bild2) at ([xshift=2.75cm]Bild.east) {\includegraphics[scale=0.39]{birth_inter_blank}};
+   			\node (B3) at ([xshift=2.75cm]Bild2.east) {\includegraphics[scale=.39]{birth_high_blank}};
+        	
+			\node (B4) at ([yshift=-2.25cm]Bild.south) {\includegraphics[scale=.39]{death_low_blank}};
+			\node (B5) at ([xshift=2.65cm]B4.east) {\includegraphics[scale=0.39]{death_inter_blank}};
+   			\node (B6) at ([xshift=2.75cm]B5.east) {\includegraphics[scale=.39]{death_high_blank}};        	
+        	
+        	\node at ([yshift=-.2cm]B5.south) {\Large antibiotic concentration $c$};
+        	\node[rotate=90] at ([xshift=-.4cm,yshift=-2.45cm]Bild.west) {\Large survival probability};
+        	\node at ([yshift=-.2cm]Bild.north) {\Large $\text{mic}_R = 5\times \text{mic}_S$};
+        	\node at ([yshift=-.3cm]Bild2.north) {\Large $\text{mic}_R = 10\times \text{mic}_S$};
+        	\node at ([yshift=-.3cm]B3.north) {\Large $\text{mic}_R = 20\times \text{mic}_S$};
+        	
+        	\node at ([yshift=.5cm,xshift=.65cm]B3.east) {\Large birth};
+        	\node at ([yshift=0cm,xshift=.65cm]B3.east) {\Large competition};
+        	%\node at ([yshift=-.5cm,xshift=.5cm]B3.east) {\Large birth};
+        	
+        	\node at ([yshift=.5cm,xshift=.65cm]B6.east) {\Large death};
+        	\node at ([yshift=0cm,xshift=.65cm]B6.east) {\Large competition};
+        	%\node at ([yshift=-.5cm,xshift=.5cm]B6.east) {\Large death};
+        	
+			\draw[thick,color=py_blue] (0.15,0.8) -- node[right=5pt] {\color{black} biostatic} (0.2,0.8);        	
+			\draw[thick,color=py_orange] (0.15,0.7) -- node[right=5pt] {\color{black} biocidal} (0.2,0.7);    
+			%\draw[thick,dashed] (0.15,0.6) -- node[right=5pt] {\color{black} mic$_S$} (0.2,0.6); 
+			\node at ([xshift=.6cm,yshift=1.5cm]Bild.center) {\small mic$_S$}; 
+			
+			%\node at ([xshift=.6cm,yshift=1.5cm]Bild.center) {\small msw};   
+ 			
+    	\end{scope}
+\end{tikzpicture}
+
+\end{document}
