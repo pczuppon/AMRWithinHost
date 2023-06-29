@@ -19,7 +19,7 @@ using namespace std;
 #define bR 2.25          // birth rate resistant
 #define dR 0.5          // death rate resistant
 #define cR 1.           // competition rate resistant
-#define R_init 1        // initial value resistant
+#define R_init 0        // initial value resistant
 
 // General parameters
 #define K 1000          // Carrying capacity scaling
@@ -44,7 +44,7 @@ int main(int argc,char *argv[])
     int r_ind = 0;                                   // repetition index
     int repeats = 100000;                         // number of repetitions
     
-    while (success < 1000 && r_ind < 1000000)
+    while (success < 1000 && r_ind < repeats)
     {
         r_ind++;
         gsl_rng_set(r,r_ind);
@@ -87,7 +87,7 @@ int RUN(double c,double tfin,int scenario,double fac,int fac2)
     transitions[1] = -1;
     
     // Simulation 
-    while (t <= tfin && R>0)
+    while (t <= tfin && S>0)
     {
         // Update
         int update = 0;         // verification of update (while = 0 keep on searching for the index to update)
@@ -135,6 +135,7 @@ int RUN(double c,double tfin,int scenario,double fac,int fac2)
                 {
                     if (ind%2 == 0)             //birth event
                     {
+                        cout << "here";
                         // Mutation event
                         if (gsl_ran_bernoulli(r, nu)==1)
                         {

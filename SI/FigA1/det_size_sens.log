@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.12)  15 DEC 2022 16:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.6.4)  22 JUN 2023 17:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -736,8 +736,8 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 r_c_blank.png> <./high_c_blank.png>] (./det_size_sens.aux) ) 
 Here is how much of TeX's memory you used:
  15828 strings out of 481239
- 321533 string characters out of 5920377
- 553009 words of memory out of 5000000
+ 321533 string characters out of 5920378
+ 553010 words of memory out of 5000000
  30766 multiletter control sequences out of 15000+600000
  561482 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -747,7 +747,7 @@ Here is how much of TeX's memory you used:
 pe1/public/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dist/fonts/type1/ad
 obe/utopia/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/p
 utri8a.pfb>
-Output written on det_size_sens.pdf (1 page, 75596 bytes).
+Output written on det_size_sens.pdf (1 page, 75542 bytes).
 PDF statistics:
  31 PDF objects out of 1000 (max. 8388607)
  18 compressed objects within 1 object stream

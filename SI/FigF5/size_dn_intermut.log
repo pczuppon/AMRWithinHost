@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.12)  16 FEB 2023 11:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.6.4)  14 JUN 2023 16:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -765,8 +765,8 @@ gh.png>]
 (./size_dn_intermut.aux) ) 
 Here is how much of TeX's memory you used:
  15911 strings out of 481239
- 322743 string characters out of 5920377
- 556021 words of memory out of 5000000
+ 322743 string characters out of 5920378
+ 556022 words of memory out of 5000000
  30836 multiletter control sequences out of 15000+600000
  581934 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -775,7 +775,7 @@ Here is how much of TeX's memory you used:
 r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on size_dn_intermut.pdf (1 page, 96225 bytes).
+Output written on size_dn_intermut.pdf (1 page, 92008 bytes).
 PDF statistics:
  37 PDF objects out of 1000 (max. 8388607)
  18 compressed objects within 1 object stream

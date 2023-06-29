@@ -69,7 +69,7 @@ def a(c,X):
     if (X==1):
         psimax = bR-dR
         mic = 0.017*10
-    psimin = np.log(10)*(-6.5)
+    psimin = np.log(10)*(-6.5)*24
     kappa = 1.1
     
     return((psimax-psimin)*(c/mic)**kappa / ((c/mic)**kappa -psimin/psimax))

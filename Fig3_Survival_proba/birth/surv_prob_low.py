@@ -28,7 +28,7 @@ K = 1000
 N0 = (bS-dS)*K/gamma
 
 ################################ Antimicrobial response / Pharmacodynamics
-c = np.arange(0,1.,0.0001)
+c = np.arange(0,2.,0.0001)
 
 def a(c,X):
     if (X==0):
@@ -219,11 +219,12 @@ for i in range(len(c)):
     rhoS = bS-a(c[i],0)-dS
     rhoR = bR-a(c[i],1)-dR
     s = rhoR-rhoS
-    
+    #
     F = K*s*rhoS*rhoR / (K*s*rhoS*rhoR + (dR + a(c[i],1)) * (N0 * gamma * rhoR * (1-np.exp(-s*TT)) + s * (rhoS*K - N0*gamma)*(1-np.exp(-rhoR*TT))))
     F2 = K*s*rhoS*rhoR / (K*s*rhoS*rhoR + (dR + a(c[i],1)) * (N0 * gamma * rhoR * (1-np.exp(-s*TTinf)) + s * (rhoS*K - N0*gamma)*(1-np.exp(-rhoR*TTinf))))
     surv_bc.append(max(0,F))
     survinf_bc.append(max(0,F2))
+
 
 i = 170
 surv_bc[i] = (surv_bc[i-1] + surv_bc[i+1])/2

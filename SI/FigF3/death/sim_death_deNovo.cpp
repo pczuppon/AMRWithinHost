@@ -19,7 +19,7 @@ using namespace std;
 #define bR 2.25          // birth rate resistant
 #define dR 0.5          // death rate resistant
 #define cR 1.           // competition rate resistant
-#define R_init 1        // initial value resistant
+#define R_init 0        // initial value resistant
 
 // General parameters
 #define K 1000          // Carrying capacity scaling
@@ -100,7 +100,7 @@ int RUN(double c,double tfin,int scenario,double fac)
     // Infinite treatment scenario
     if (tfin == 0)
     {
-        while (R>0 && S>0)
+        while (S>0)
         {
             // Update
             int update = 0;         // verification of update (while = 0 keep on searching for the index to update)
@@ -182,7 +182,7 @@ int RUN(double c,double tfin,int scenario,double fac)
     // Finite treatment scenario
     else
     {
-        while (t <= tfin && R>0)
+        while (t <= tfin && S>0)
         {
             // Update
             int update = 0;         // verification of update (while = 0 keep on searching for the index to update)
